@@ -142,7 +142,7 @@ Rules:
 """
 
 ####### Code Generation Tool #########################
-def CodeGenerationTool(query: str, df: pd.DataFrame) -> Tuple[str, bool, str]:
+def CodeGenerationAgent(query: str, df: pd.DataFrame) -> Tuple[str, bool, str]:
     """
     Selects the appropriate code generation prompt based on the query and uses the LLM to generate code.
     Returns a tuple containing (generated_code, should_plot, extra).
@@ -223,7 +223,7 @@ if __name__ == '__main__':
     print("QueryUnderstandingTool output:")
     print(QueryUnderstandingTool(query))
     
-    code, should_plot, extra = CodeGenerationTool(query, df)
+    code, should_plot, extra = CodeGenerationAgent(query, df)
     print("Generated Code:")
     print(code)
     print("Should Plot:", should_plot)

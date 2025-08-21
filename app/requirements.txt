@@ -1,0 +1,12 @@
+matplotlib
+seaborn 
+pandas
+streamlit
+python-dotenv
+nbclient
+jupyter_client
+langchain
+langchain-community
+langchain-groq
+uvicorn
+fastapi
